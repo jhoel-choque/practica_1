@@ -1,0 +1,3 @@
+﻿  selection_sort.cpp
+C:\Users\Jhoel\Documents\python\homeworks\selection_sort_c++\selectionsort\selection_sort.cpp(9,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  selectionsort.vcxproj -> C:\Users\Jhoel\Documents\python\homeworks\selection_sort_c++\selectionsort\x64\Debug\selectionsort.exe
