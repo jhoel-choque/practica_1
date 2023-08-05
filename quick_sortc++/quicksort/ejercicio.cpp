@@ -2,6 +2,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include <chrono>
 
 using namespace std;
 
@@ -46,24 +47,25 @@ int main() {
         list_random.push_back(rand() % 10000 + 1);
     }
     //Imprimir lista desordenada
-    for (int num : list_random) {
+    /*for (int num : list_random) {
         std::cout << num << " ";
-    }
-    // Medir el tiempo de ejecución de quicksort
-    clock_t start_time = clock();
+    }*/
+    
+    // Captura el tiempo de inicio
+    auto start_time = std::chrono::high_resolution_clock::now();
     vector<int> sorted_list = quicksort(list_random);
-    clock_t end_time = clock();
 
-    cout << "Lista ordenada ";
+    // Captura el tiempo de finalización
+    auto end_time = std::chrono::high_resolution_clock::now();
+    // Calcula la duración de la ejecución
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
+
+    /*cout << "\nLista ordenada ";
     for (int num : sorted_list) {
         std::cout << num << " ";
-    }
-    // Calcular el tiempo transcurrido
-    double elapsed_time = static_cast<double>(end_time - start_time) / CLOCKS_PER_SEC;
-    cout << endl;
-
-
-    cout << "Tiempo de ejecución: " << elapsed_time << " segundos" << endl;
+    }*/
+    std::cout << "\nTiempo de ejecución: " << duration.count() << " microsegundos" << std::endl;
+    std::cout << std::endl;
 
     return 0;
 }

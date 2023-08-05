@@ -58,47 +58,55 @@ void merge_sort(std::vector<int>& arr, int left, int right) {
 }
 
 int main() {
-    std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    for (int i = 0; i < 5; i++)
+    {
+        //repetir el codigo 5 veces
 
-    int n = 50000; // Tamaño de la lista
-    std::vector<int> unsorted_list;
+        std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
-    // Crea un generador de números aleatorios usando una semilla adecuada
-    std::random_device rd;
-    std::mt19937 gen(rd());
+        int n = 50000; // Tamaño de la lista
+        std::vector<int> unsorted_list;
 
-    // Crea una distribución uniforme de números en un rango
-    std::uniform_int_distribution<int> dis(1, 10000); // Cambia el rango según tus necesidades
 
-    // Genera números aleatorios y agrega a la lista
-    for (int i = 0; i < n; ++i) {
-        unsorted_list.push_back(dis(gen));
+        // Crea un generador de números aleatorios usando una semilla adecuada
+        std::random_device rd;
+        std::mt19937 gen(rd());
+
+        // Crea una distribución uniforme de números en un rango
+        std::uniform_int_distribution<int> dis(1, 10000); // Cambia el rango según tus necesidades
+
+        // Genera números aleatorios y agrega a la lista
+        for (int i = 0; i < n; ++i) {
+            unsorted_list.push_back(dis(gen));
+        }
+
+
+        // Imprime la lista generada
+        /*
+        std::cout << "Lista aleatoria: ";
+        for (int num : unsorted_list) {
+            std::cout << num << " ";
+        }*/
+
+        // Captura el tiempo de inicio
+        auto start_time = std::chrono::high_resolution_clock::now();
+
+        merge_sort(unsorted_list, 0, unsorted_list.size() - 1);
+
+        // Captura el tiempo de finalización
+        auto end_time = std::chrono::high_resolution_clock::now();
+
+        // Calcula la duración de la ejecución
+        auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
+
+        // Imprime la lista ordenada
+        /*
+        std::cout << "\nLista ordenada:";
+        for (int num : unsorted_list) {
+            std::cout << " " << num;
+        }*/
+        std::cout << "\nTiempo de ejecución: " << duration.count() << " microsegundos" << std::endl;
     }
-
-
-    // Imprime la lista generada
-    std::cout << "Lista aleatoria: ";
-    for (int num : unsorted_list) {
-        std::cout << num << " ";
-    }
-
-    // Captura el tiempo de inicio
-    auto start_time = std::chrono::high_resolution_clock::now();
-
-    merge_sort(unsorted_list, 0, unsorted_list.size() - 1);
-
-    // Captura el tiempo de finalización
-    auto end_time = std::chrono::high_resolution_clock::now();
-
-    // Calcula la duración de la ejecución
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
-
-    // Imprime la lista ordenada
-    std::cout << "Lista ordenada:";
-    for (int num : unsorted_list) {
-        std::cout << " " << num;
-    }
-    std::cout << "Tiempo de ejecución: " << duration.count() << " microsegundos" << std::endl;
     std::cout << std::endl;
 
     return 0;
