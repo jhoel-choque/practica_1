@@ -1,3 +1,0 @@
-﻿  bubble.cpp
-C:\Users\Jhoel\Documents\python\homeworks\bublle_sort_c++\bubblesort\bubble.cpp(8,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  bubblesort.vcxproj -> C:\Users\Jhoel\Documents\python\homeworks\bublle_sort_c++\bubblesort\x64\Debug\bubblesort.exe

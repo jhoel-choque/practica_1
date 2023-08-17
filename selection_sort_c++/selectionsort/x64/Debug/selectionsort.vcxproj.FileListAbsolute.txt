@@ -1,1 +1,0 @@
-C:\Users\Jhoel\Documents\python\homeworks\selection_sort_c++\selectionsort\x64\Debug\selectionsort.exe

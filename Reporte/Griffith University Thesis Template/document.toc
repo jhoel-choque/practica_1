@@ -1,8 +1,0 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Introducción}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Comparación de Rendimiento entre Goland, Python y C++}{1}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Algoritmos}{1}{section.2}%
-\contentsline {section}{\numberline {3}Implementación}{2}{section.3}%
-\contentsline {section}{\numberline {4}Resultados}{2}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Subsection1}{3}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Conclusiones}{3}{section.5}%
