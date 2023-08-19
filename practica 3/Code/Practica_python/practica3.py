@@ -4,7 +4,7 @@ from numpy.random import choice as np_choice
 from math import sqrt
 import matplotlib.pyplot as plt
 import json
-
+import time
 
 class AntColony(object):
 
@@ -94,13 +94,13 @@ class AntColony(object):
 
 #Static TSP Instance
 
-distances = np.array([
-    [np.inf, 113, 56, 167, 147],
-    [113, np.inf, 137, 142, 98],
-    [56, 137, np.inf, 133, 135],
-    [167, 142, 133, np.inf, 58],
-    [147, 98, 135, 58, np.inf],
-])
+#distances = np.array([
+#    [np.inf, 113, 56, 167, 147],
+#   [113, np.inf, 137, 142, 98],
+#   [56, 137, np.inf, 133, 135],
+#   [167, 142, 133, np.inf, 58],
+"""    [147, 98, 135, 58, np.inf],
+])"""
 #0=Grand Rapids
 #1=Saginaw
 #2=Kalamazoo
@@ -108,23 +108,27 @@ distances = np.array([
 #4=Detroit
 
 #Dinamic TSP Instance
-#numero=int(input("ingrese numeor de dimesiones del arreglo: "))
-#m2= np.full((numero, numero), np.inf)
-#for i in range(numero):
-#    for j in range(i + 1, numero):
-#        value = np.random.randint(50, 60)  # Generar valores aleatorios para las celdas
-#        m2[i, j] = value
-#        m2[j, i] = value
+numero=int(input("ingrese numeor de dimesiones del arreglo: "))
+m2= np.full((numero, numero), np.inf)
+for i in range(numero):
+    for j in range(i + 1, numero):
+        value = np.random.randint(50, 150)  # Generar valores aleatorios para las celdas
+        m2[i, j] = value
+        m2[j, i] = value
 
-ant_colony = AntColony(distances, 50, 50, 150, 0.7, alpha=1, beta=1)
+for i in range (50,150,10):
+    tiempo_inicial = time.time()
+    ant_colony = AntColony(m2, i, 50, 150, 0.7, alpha=1, beta=1)
 
-shortest_path,log = ant_colony.run()
+    shortest_path,log = ant_colony.run()
+    tiempo_final = time.time()
 
+    print ("shortest_path: {}".format(shortest_path))
+    #plt.plot(log)
+    execution_time=tiempo_final-tiempo_inicial
+    print("Tiempo de ejecución:", execution_time, "segundos")
+    #plt.title("Distancia Total vs Nro Iteraciones")
+    #plt.xlabel("Nro de Iteraciones")
+    #plt.ylabel("Distancia Total")
 
-print ("shortest_path: {}".format(shortest_path))
-plt.plot(log)
-plt.title("costo vs N costos")
-plt.xlabel("Nro de costos")
-plt.ylabel("distancia")
-
-plt.show()
+    #plt.show()

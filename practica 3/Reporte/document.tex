@@ -4,15 +4,13 @@
 \usepackage{makeidx}
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{float}
 % Title Page
-\title{Práctica 3}
+\title{Práctica 3: El problema del Agente Viajero}
 \author{}
 \begin{document}
 \maketitle
 	
-	\begin{abstract}
-		
-	\end{abstract}
 	\section{Introducción}
 	El problema del agente viajero (TSP, Travelling salesman problem) es uno de los problemas de optimización combinatoria más conocidos y estudiados en la teoría de la optimización y la investigación de operaciones.\\
 	Este problema se plantea de la siguiente manera: Dado un conjunto de ciudades y las distancias entre cada par de ciudades, el objetivo es encontrar la ruta más corta que visite cada ciudad exactamente una vez y regrese a la ciudad de origen. El problema busca minimizar la distancia total recorrida por el agente viajero mientras cumple con las restricciones mencionadas.
@@ -57,7 +55,7 @@
 		\item \textbf{Método pick\_move():} Este método elige un movimiento para una hormiga en función de la probabilidad de feromonas y distancia.
 	\end{itemize}
 	\subsection{Matriz TSP}
-	Se utilizó una matriz cuadrada espejo como representación\\
+	Se utilizó una matriz cuadrada espejo como representación del problema, een cuya diagonal esta conformada por infinitos, para \\
 	\[
 	Distancias =
 	\begin{bmatrix}
@@ -75,12 +73,108 @@
 		\item[-]2 = Kalamazoo
 		\item[-]3 = Toledo
 		\item[-]4 = Detroit
-
 	\end{itemize}
+	
 	Para los experimentos con un mayor número de ciudades, se utilizaron matrices generadas aleatoriamente
 	
-	El codigo fuente se puede encontrar en el siguiente repositorio
+	El codigo fuente se puede encontrar en el siguiente enlace\\
+	\href{https://github.com/jhoel-choque/practica_1}{Repositorio}
 	\section{Resustados}
+	Los parámetros usados para el algoritmo son los siguientes:
+	\begin{enumerate}
+		\item Número de hormigas = 50
+		\item Número de mejores caminos = 50
+		\item Número de iteraciones = 150
+		\item Tasa de evaporación = 0.7
+		\item Alpha = 1
+		\item Beta = 1
+	\end{enumerate}
+	\subsection{Ejercicio TSP inicial}
+	El resultado del ejercicio fue el siguiente:\\
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.75\textwidth]{C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/figura1.png}
+		\caption{Representación del problema del agente viajero utilizando un grafo.}
+	\end{figure}
+	\begin{itemize}
+		\item La ruta más corta tiene una ongitud de 458.0.\\
+		\item El ciclo Hamiltoniano más óptimo es el de Grand Rapids, Saginaw, Detroit, Toledo, Kalamazoo y Grand Rapids.
+		\item El tiempo de ejecucion del algoritmo fue de 1.495 segundos.
+	\end{itemize}
+	\subsection{Incrementando el número de nodos aleatoriamente}
+	Para la generación de las matrices de prueba se utilizó los siguientes parámetros:
+	\begin{enumerate}
+		\item Numero de nodos = [50, 100, 200, 1000]
+		\item Rango de distancias = entre 50 a 150
+	\end{enumerate}
+	Se utilizaron los mismos parámetros para el algoritmo
+	En la siguiente tabla se muestra la influencia que tiene el número de nodos (ciudades) frente al tiempo.
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{cc}
+			\hline
+			Nro de Nodos & Tiempo (s)\\
+			\hline
+			50 & 19.33\\
+			100 & 42.78\\
+			200 & 100.98\\
+			1000 & 1089.91\\
+			\hline
+		\end{tabular}
+		\caption{Se muestra el incremento de nodos frente a los tiempos de ejecución obtenidos por el algoritmo}
+	\end{table}
+	
+	A conticuación se muestra los graficos de distancia total vs el número de iteraciones de  cada número de nodos. El grafico muestra la evolucion del algoritmo, como poco a poco las hormigas artificiales buscan un camino más corto.\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figure_2.png}
+		\caption{Representación de las distancias totales vs el número de iteraciones de un TSP de 50 nodos}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figure_3.png}
+		\caption{Representación de las distancias totales vs el número de iteraciones de un TSP de 100 nodos}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figure_4.png}
+		\caption{Representación de las distancias totales vs el número de iteraciones de un TSP de 200 nodos}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figure_5.png}
+		\caption{Representación de las distancias totales vs el número de iteraciones de un TSP de 1000 nodos}
+	\end{figure}
+	
+	\subsection{Variando el Número de hormigas}
+	En el siguiente cuadro se muestra como varia el tiempo de ejecución a medida que el número de hormigas incrementa
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{cccc}
+			\hline
+			Nro de Nodos & Número de Hormigas & Tiempo (s)& Distancia Total\\
+			\hline
+			50 & 50& 20.14&2900.0\\
+			50 & 60& 24.05&2901.0\\
+			50 & 70&27.63&2879.0\\
+			50 & 80&31.45&2850.0\\
+			50 & 90&35.43&2874.0\\
+			50 & 100&39.68&2868.0\\
+			50 & 110&44.69&2808.0\\
+			50 & 120&45.97&2847.0\\
+			50 & 130&49.83&2865.0\\
+			50 & 140&53.54&2856.0\\
+			\hline
+		\end{tabular}
+		\caption{Se muestra el tiempo de ejecución y la distancia frente a una misma matriz de distancias}
+	\end{table}
+	
+	Se puede observar que al principio, la calidad de la respuesta mejora a medida que se incrementa la cantidad de hormigas.
 	
 	\section{Conclusiones}
-\end{document}          
+	El algoritmo de Colonia de Hormigas es una herramiento poderosa y versatil para resolver el problema del agente viajero\\
+	
+	Este algoritmo depende en gran medida de los parámetros iniciales. Esto quiere decir que incrementar o decrementar la cantidad de hormigas, porcentaje de evaporación, alpha, beta y los demas parámetros afectan significativamente en el rendimiento del algoritmo.
+	
+\end{document}

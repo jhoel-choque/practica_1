@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.5)  18 AUG 2023 07:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.5)  19 AUG 2023 07:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -289,50 +289,58 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip53
 )
+(C:\Program Files\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count286
+\float@exts=\toks23
+\float@box=\box53
+\@float@everytoks=\toks24
+\@floatcapt=\box54
+)
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count287
+\l__pdf_internal_box=\box55
 )
 (document.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
 )
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
+\scratchcounter=\count288
 \scratchdimen=\dimen157
-\scratchbox=\box54
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count290
+\scratchbox=\box56
+\nofMPsegments=\count289
+\nofMParguments=\count290
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count291
 \MPscratchDim=\dimen158
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
+\everyMPtoPDFconversion=\toks26
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -341,7 +349,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 10.
+Package hyperref Info: Link coloring OFF on input line 11.
+ (document.out)
+(document.out)
 \@outlinefile=\write3
 \openout3 = `document.out'.
 
@@ -352,49 +362,147 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 	\end{abstract}
-                     [1]
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.36 		\item \textbf
+l.34 		\item \textbf
                     {Hormigas artificiales:} En el contexto de la colonia de...
 [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[3] [4] (document.aux
+[3]
+<C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/figura1.
+png, id=71, 609.02531pt x 422.32782pt>
+File: C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/fig
+ura1.png Graphic file (type png)
+<use C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/figu
+ra1.png>
+Package pdftex.def Info: C:/Users/Jhoel/Documents/python/homeworks/practica 3/R
+eporte/imagenes/figura1.png  used on input line 96.
+(pdftex.def)             Requested size: 258.75pt x 179.43216pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.107 		\item N
+               umero de nodos = [50, 100, 200, 1000] <C:/Users/Jhoel/Documents/
+python/homeworks/practica 3/Reporte/imagenes/figura1.png>]
+<C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figure_2
+.png, id=85, 462.528pt x 346.896pt>
+File: C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Fig
+ure_2.png Graphic file (type png)
+<use C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figu
+re_2.png>
+Package pdftex.def Info: C:/Users/Jhoel/Documents/python/homeworks/practica 3/R
+eporte/imagenes/Figure_2.png  used on input line 131.
+(pdftex.def)             Requested size: 258.75pt x 194.06987pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--133
+
+ []
+
+<C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figure_3
+.png, id=86, 462.528pt x 346.896pt>
+File: C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Fig
+ure_3.png Graphic file (type png)
+<use C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figu
+re_3.png>
+Package pdftex.def Info: C:/Users/Jhoel/Documents/python/homeworks/practica 3/R
+eporte/imagenes/Figure_3.png  used on input line 136.
+(pdftex.def)             Requested size: 258.75pt x 194.06987pt.
+<C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figure_4
+.png, id=87, 462.528pt x 346.896pt>
+File: C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Fig
+ure_4.png Graphic file (type png)
+<use C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figu
+re_4.png>
+Package pdftex.def Info: C:/Users/Jhoel/Documents/python/homeworks/practica 3/R
+eporte/imagenes/Figure_4.png  used on input line 141.
+(pdftex.def)             Requested size: 258.75pt x 194.06987pt.
+[5
+pdfTeX warning (ext4): destination with the same identifier (name{table.0.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.143 	\end{figure}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.143 	\end{figure}
+                    <C:/Users/Jhoel/Documents/python/homeworks/practica 3/Repor
+te/imagenes/Figure_2.png>]
+<C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figure_5
+.png, id=97, 462.528pt x 346.896pt>
+File: C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Fig
+ure_5.png Graphic file (type png)
+<use C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/Figu
+re_5.png>
+Package pdftex.def Info: C:/Users/Jhoel/Documents/python/homeworks/practica 3/R
+eporte/imagenes/Figure_5.png  used on input line 146.
+(pdftex.def)             Requested size: 258.75pt x 194.06987pt.
+ [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.149 	
+       
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.149 	
+        <C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/
+Figure_3.png> <C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/ima
+genes/Figure_4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.177 	
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.0.2}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.177 	
+        <C:/Users/Jhoel/Documents/python/homeworks/practica 3/Reporte/imagenes/
+Figure_5.png>] [8] (document.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
-
-Package rerunfilecheck Warning: File `document.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `document.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  E47A032E2BD1746A4859DD3775C809A6;1140.
+Package rerunfilecheck Info: File `document.out' has not changed.
+(rerunfilecheck)             Checksum: D5FBFEF337A4F86BA452B5C015A89BB4;1854.
  ) 
 Here is how much of TeX's memory you used:
- 10238 strings out of 476331
- 161346 string characters out of 5797581
+ 10387 strings out of 476331
+ 165805 string characters out of 5797581
  1861660 words of memory out of 5000000
- 30557 multiletter control sequences out of 15000+600000
+ 30669 multiletter control sequences out of 15000+600000
  517670 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,76p,500b,520s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,76p,500b,520s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
 12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on document.pdf (6 pages, 106895 bytes).
+Output written on document.pdf (9 pages, 294411 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
