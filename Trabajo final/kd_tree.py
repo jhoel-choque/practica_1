@@ -1,36 +1,37 @@
 class KDTree(object):
     
     """
-    A super short KD-Tree for points...
-    so concise that you can copypasta into your homework 
-    without arousing suspicion.
+    Un KD-Tree muy breve para puntos...
+    tan conciso que puedes copiarlo en tus tareas 
+    sin levantar sospechas.
 
-    This implementation only supports Euclidean distance. 
+    Esta implementación solo admite distancias euclidianas. 
 
-    The points can be any array-like type, e.g: 
-        lists, tuples, numpy arrays.
+    Los puntos pueden ser de cualquier tipo similar a un array, por ejemplo: 
+    listas, tuplas, arreglos de numpy.
 
-    Usage:
-    1. Make the KD-Tree:
-        `kd_tree = KDTree(points, dim)`
-    2. You can then use `get_knn` for k nearest neighbors or 
-       `get_nearest` for the nearest neighbor
+    Uso:
+    1. Crea el KD-Tree:
+    `kd_tree = KDTree(puntos, dimensión)`
+    2. Luego puedes usar `get_knn` para obtener los k vecinos más cercanos o 
+    `get_nearest` para el vecino más cercano.
 
-    points are be a list of points: [[0, 1, 2], [12.3, 4.5, 2.3], ...]
+    Los puntos deben ser una lista de puntos: [[0, 1, 2], [12.3, 4.5, 2.3], ...]
     """
     def __init__(self, points, dim, dist_sq_func=None):
-        """Makes the KD-Tree for fast lookup.
+        """
+        Crea el KD-Tree para una búsqueda rápida.
 
-        Parameters
+        Parámetros
         ----------
         points : list<point>
-            A list of points.
+            Una lista de puntos.
         dim : int 
-            The dimension of the points. 
-        dist_sq_func : function(point, point), optional
-            A function that returns the squared Euclidean distance
-            between the two points. 
-            If omitted, it uses the default implementation.
+            La dimensión de los puntos. 
+        dist_sq_func : función(point, point), opcional
+            Una función que devuelve la distancia euclidiana al cuadrado
+            entre dos puntos. 
+            Si se omite, se utiliza la implementación predeterminada.
         """
 
         if dist_sq_func is None:
@@ -90,61 +91,18 @@ class KDTree(object):
         return self._walk(self._root)
         
     def add_point(self, point):
-        """Adds a point to the kd-tree.
-        
-        Parameters
-        ----------
-        point : array-like
-            The point.
-        """
+
         if self._root is None:
             self._root = [None, None, point]
         else:
             self._add_point(self._root, point)
 
     def get_knn(self, point, k, return_dist_sq=True):
-        """Returns k nearest neighbors.
 
-        Parameters
-        ----------
-        point : array-like
-            The point.
-        k: int 
-            The number of nearest neighbors.
-        return_dist_sq : boolean
-            Whether to return the squared Euclidean distances.
-
-        Returns
-        -------
-        list<array-like>
-            The nearest neighbors. 
-            If `return_dist_sq` is true, the return will be:
-                [(dist_sq, point), ...]
-            else:
-                [point, ...]
-        """
         return self._get_knn(self._root, point, k, return_dist_sq, [])
 
     def get_nearest(self, point, return_dist_sq=True):
-        """Returns the nearest neighbor.
 
-        Parameters
-        ----------
-        point : array-like
-            The point.
-        return_dist_sq : boolean
-            Whether to return the squared Euclidean distance.
-
-        Returns
-        -------
-        array-like
-            The nearest neighbor. 
-            If the tree is empty, returns `None`.
-            If `return_dist_sq` is true, the return will be:
-                (dist_sq, point)
-            else:
-                point
-        """
         l = self._get_knn(self._root, point, 1, return_dist_sq, [])
         return l[0] if len(l) else None
     

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.5)  10 SEP 2023 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.5)  10 SEP 2023 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -93,10 +93,7 @@ File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count270
 \l__pdf_internal_box=\box53
 )
-(template_Article.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
-)
+(template_Article.aux)
 \openout1 = `template_Article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -170,7 +167,7 @@ TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7
 .pfb>
-Output written on template_Article.pdf (5 pages, 102073 bytes).
+Output written on template_Article.pdf (5 pages, 101929 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
