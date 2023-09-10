@@ -1,14 +1,7 @@
 class KDTree(object):
     
     """
-    Un KD-Tree muy breve para puntos...
-    tan conciso que puedes copiarlo en tus tareas 
-    sin levantar sospechas.
-
     Esta implementación solo admite distancias euclidianas. 
-
-    Los puntos pueden ser de cualquier tipo similar a un array, por ejemplo: 
-    listas, tuplas, arreglos de numpy.
 
     Uso:
     1. Crea el KD-Tree:
