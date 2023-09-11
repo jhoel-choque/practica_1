@@ -2,6 +2,7 @@
 \usepackage[spanish]{babel}
 \usepackage{listings}
 \usepackage{verbatim}
+\usepackage{hyperref}
 %opening
 \title{Implementación del Modelo de Clasificación con KD-Tree}
 \author{}
@@ -37,10 +38,16 @@ el algoritmo que se utilizó tiene la siguiente estructura:
 	\item \textbf{point\_label\_dict:} Un diccionario que asigna cada punto a su etiqueta de clase correspondiente. Esto se utiliza en la función classify para contar las clases de los vecinos más cercanos.
 \end{itemize}	
 \section{Implementación}
+
 En esta implementación, se desarrolló un modelo de clasificación utilizando un KD-Tree (Árbol K-dimensional) para realizar predicciones en un conjunto de datos relacionado con la diabetes. El objetivo principal es clasificar a las personas como diabéticas o no diabéticas en función de varias características médicas y personales.
 
-\subsection{Carga y Preprocesamiento de Datos}
+\begin{itemize}
+	\item Se utilizó Python para la implementación.
+	\item \href{https://github.com/jhoel-choque/practica_1/tree/master}{Enlace de Git-Hub}
+\end{itemize}
 
+
+\subsection{Carga y Preprocesamiento de Datos}
 El proceso comienza importando las bibliotecas esenciales, como Pandas, NumPy y Scikit-Learn, para manipular y evaluar los datos. Además, se crearon dos diccionarios (codigo\_mapa y codigo\_mapa\_2) para codificar las variables categóricas presentes en el conjunto de datos original. Luego, se cargó el conjunto de datos desde un archivo CSV llamado 'diabetes\_prediction\_dataset.csv' utilizando la biblioteca Pandas.
 
 \begin{comment}
